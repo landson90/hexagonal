@@ -1,19 +1,19 @@
 package com.land.hexagonal.applicatoin.core.domain;
 
-public class Customer {
+public class CustomerDomain {
 
     private String id;
     private String name;
-    private Address address;
+    private AddressDomain address;
     private String cpf;
     private Boolean isValidCpf;
 
-    public Customer() {
+    public CustomerDomain() {
         this.isValidCpf = false;
     }
 
 
-    public Customer(String id, String name, Address address, String cpf, Boolean isValidCpf) {
+    public CustomerDomain(String id, String name, AddressDomain address, String cpf, Boolean isValidCpf) {
         this.id = id;
         this.name = name;
         this.address = address;
@@ -38,11 +38,11 @@ public class Customer {
         this.name = name;
     }
 
-    public Address getAddress() {
+    public AddressDomain getAddress() {
         return address;
     }
 
-    public void setAddress(Address address) {
+    public void setAddress(AddressDomain address) {
         this.address = address;
     }
 

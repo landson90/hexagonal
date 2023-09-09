@@ -1,16 +1,16 @@
 package com.land.hexagonal.applicatoin.core.domain;
 
-public class Address {
+public class AddressDomain {
 
     private String street;
     private String city;
     private String state;
 
 
-    public Address() {
+    public AddressDomain() {
     }
 
-    public Address(String street, String city, String state) {
+    public AddressDomain(String street, String city, String state) {
         this.street = street;
         this.city = city;
         this.state = state;
