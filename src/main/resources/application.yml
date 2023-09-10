@@ -1,0 +1,4 @@
+arantes:
+  client:
+    address:
+      url: htt://localhost:8082/addresses
