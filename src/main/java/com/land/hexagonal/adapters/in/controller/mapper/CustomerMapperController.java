@@ -2,6 +2,7 @@ package com.land.hexagonal.adapters.in.controller.mapper;
 
 
 import com.land.hexagonal.adapters.in.controller.request.CustomerRequest;
+import com.land.hexagonal.adapters.in.controller.response.CustomerResponse;
 import com.land.hexagonal.adapters.out.repository.entity.CustomerEntity;
 import com.land.hexagonal.applicatoin.core.domain.CustomerDomain;
 import org.mapstruct.Mapper;
@@ -17,4 +18,6 @@ public interface CustomerMapperController {
     CustomerDomain toCustomerDomain(CustomerRequest customerRequest);
 
     CustomerEntity toCustomerEntity(CustomerDomain customerDomain);
+
+    CustomerResponse toCustomerResponse(CustomerDomain customerDomain);
 }
