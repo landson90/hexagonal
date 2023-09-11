@@ -23,7 +23,7 @@ public class FindAdressByZipCodeAdapater implements FindAddressByZipCodeOutputPo
     @Override
     public AddressDomain find(String zipCode) {
         var adressReponseFienClient = this.findAddressByZipCodeClient.find(zipCode);
-        var addressDomain = this.adressMapper.toAdress(adressReponseFienClient);
+        var addressDomain = this.adressMapper.toAddress(adressReponseFienClient);
         return addressDomain;
     }
 }
