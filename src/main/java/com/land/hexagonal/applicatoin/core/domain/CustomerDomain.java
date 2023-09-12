@@ -61,4 +61,10 @@ public class CustomerDomain {
     public void setValidCpf(Boolean validCpf) {
         isValidCpf = validCpf;
     }
+
+
+    public String getNome() {
+        return "Juliana tu é fera !!";
+    }
+
 }
