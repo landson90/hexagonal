@@ -10,7 +10,10 @@ public class DeleteCustomerUseCase implements DeleteCustomerInputPort {
     private final DeleteCustomerOutputPort deleteCustomerOutputPort;
 
 
-    public DeleteCustomerUseCase(FindCustomerByInputPort customerByInputPort, DeleteCustomerOutputPort deleteCustomerOutputPort) {
+    public DeleteCustomerUseCase(
+            FindCustomerByInputPort customerByInputPort,
+            DeleteCustomerOutputPort deleteCustomerOutputPort
+    ) {
         this.customerByInputPort = customerByInputPort;
         this.deleteCustomerOutputPort = deleteCustomerOutputPort;
     }
