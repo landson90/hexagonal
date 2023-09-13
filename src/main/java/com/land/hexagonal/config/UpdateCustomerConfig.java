@@ -1,5 +1,8 @@
 package com.land.hexagonal.config;
 
+import com.land.hexagonal.adapters.out.FindAdressByZipCodeAdapater;
+import com.land.hexagonal.adapters.out.FindCustomerIdAdapter;
+import com.land.hexagonal.adapters.out.UpdateCustomerAdapter;
 import com.land.hexagonal.applicatoin.core.usecase.UpdateCustomerUseCase;
 import com.land.hexagonal.applicatoin.ports.out.FindAddressByZipCodeOutputPort;
 import com.land.hexagonal.applicatoin.ports.out.FindCustomerByIdOutputPort;
@@ -13,13 +16,13 @@ public class UpdateCustomerConfig {
 
 
     @Bean
-    public UpdateCustomerUseCase updateCustomerUseCase(FindCustomerByIdOutputPort findCustomerByIdOutputPort,
-                                                       FindAddressByZipCodeOutputPort findAddressByZipCodeOutputPort,
-                                                       UpdateCustomerOutputPort updateCustomerOutputPort) {
+    public UpdateCustomerUseCase updateCustomerUseCase(FindCustomerIdAdapter findCustomerIdAdapter,
+                                                       FindAdressByZipCodeAdapater findAdressByZipCodeAdapater,
+                                                       UpdateCustomerAdapter updateCustomerAdapter) {
         return new UpdateCustomerUseCase(
-                findCustomerByIdOutputPort,
-                findAddressByZipCodeOutputPort,
-                updateCustomerOutputPort
+                findCustomerIdAdapter,
+                findAdressByZipCodeAdapater,
+                updateCustomerAdapter
         );
     }
 }
