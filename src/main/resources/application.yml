@@ -1,7 +1,7 @@
 arantes:
   client:
     address:
-      url: htt://localhost:8082/addresses
+      url: http://localhost:8082/addresses
 
 
 spring:
