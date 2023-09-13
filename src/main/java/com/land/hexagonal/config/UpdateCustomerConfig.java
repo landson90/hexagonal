@@ -5,9 +5,10 @@ import com.land.hexagonal.applicatoin.ports.out.FindAddressByZipCodeOutputPort;
 import com.land.hexagonal.applicatoin.ports.out.FindCustomerByIdOutputPort;
 import com.land.hexagonal.applicatoin.ports.out.UpdateCustomerOutputPort;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
-@Component
+@Configuration
 public class UpdateCustomerConfig {
 
 
